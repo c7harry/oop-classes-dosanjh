@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Object Sealing and Freezing Example</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+        }
+        h2 {
+            color: #333;
+        }
+        p {
+            margin: 10px 0;
+        }
+        .result {
+            color: green;
+            font-weight: bold;
+        }
+        .error {
+            color: red;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+    <h2>Object Sealing and Freezing Example</h2>
+
+    <div>
+        <h3>Results for rectObj (Sealed)</h3>
+        <p><strong>Original Object:</strong> <span id="rectObjOriginal"></span></p>
+        <p><strong>Modified Object:</strong> <span id="rectObjModified"></span></p>
+        <p><strong>Is rectObj Sealed?</strong> <span id="isRectObjSealed"></span></p>
+        <p><strong>Is rectObj Frozen?</strong> <span id="isRectObjFrozen"></span></p>
+    </div>
+
+    <div>
+        <h3>Results for circleObj (Frozen)</h3>
+        <p><strong>Original Object:</strong> <span id="circleObjOriginal"></span></p>
+        <p><strong>Modified Object:</strong> <span id="circleObjModified"></span></p>
+        <p><strong>Is circleObj Sealed?</strong> <span id="isCircleObjSealed"></span></p>
+        <p><strong>Is circleObj Frozen?</strong> <span id="isCircleObjFrozen"></span></p>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
