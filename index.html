@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Object Seal/Freeze Demo</title>
+  <style>
+    pre { background: #f4f4f4; padding: 10px; }
+    .container { display: flex; gap: 2rem; }
+    .box { border: 1px solid #ccc; padding: 1rem; border-radius: 8px; }
+  </style>
+</head>
+<body>
+  <h1>Object Seal/Freeze Demo</h1>
+  <div class="container">
+    <div class="box">
+      <h2>Rectangle Object</h2>
+      <strong>Original:</strong>
+      <pre id="rectObjOriginal"></pre>
+      <strong>Modified:</strong>
+      <pre id="rectObjModified"></pre>
+      <strong>Descriptors:</strong>
+      <pre id="rectDescriptors"></pre>
+      <div>
+        <strong>Is Sealed?</strong> <span id="isRectObjSealed"></span><br>
+        <strong>Is Frozen?</strong> <span id="isRectObjFrozen"></span>
+      </div>
+    </div>
+    <div class="box">
+      <h2>Circle Object</h2>
+      <strong>Original:</strong>
+      <pre id="circleObjOriginal"></pre>
+      <strong>Modified:</strong>
+      <pre id="circleObjModified"></pre>
+      <strong>Descriptors:</strong>
+      <pre id="circleDescriptors"></pre>
+      <div>
+        <strong>Is Sealed?</strong> <span id="isCircleObjSealed"></span><br>
+        <strong>Is Frozen?</strong> <span id="isCircleObjFrozen"></span>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
